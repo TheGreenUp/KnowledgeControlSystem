@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TextArea?>
+<AnchorPane prefHeight="567.0" prefWidth="936.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.stuffControlers.TakeTestController">
+    <children>
+        <Button fx:id="backBtn" layoutX="54.0" layoutY="486.0" mnemonicParsing="false" onAction="#onBackBtn" text="Назад" />
+        <Button fx:id="completeTestBtn" layoutX="802.0" layoutY="486.0" mnemonicParsing="false" onAction="#onCompleteTestBtn" text="Отправить" />
+        <TabPane prefHeight="454.0" prefWidth="936.0" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab fx:id="questionTab_1" text="Вопрос 1">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="455.0" prefWidth="936.0">
+                            <children>
+                                <Label layoutX="411.0" layoutY="14.0" text="Вопрос 1">
+                           <font>
+                              <Font size="27.0" />
+                           </font></Label>
+                                <Label layoutX="14.0" layoutY="355.0" text="Правильный ответ:" />
+                        <Label fx:id="answer_1_1" alignment="CENTER" layoutX="116.0" layoutY="264.0" prefHeight="60.0" prefWidth="150.0" text="Ответ 1" />
+                        <Label fx:id="answer_2_1" alignment="CENTER" layoutX="336.0" layoutY="264.0" prefHeight="60.0" prefWidth="150.0" text="Ответ 2" />
+                        <Label fx:id="answer_3_1" alignment="CENTER" layoutX="533.0" layoutY="264.0" prefHeight="60.0" prefWidth="150.0" text="Ответ 3" />
+                        <Label fx:id="answer_4_1" alignment="CENTER" layoutX="732.0" layoutY="264.0" prefHeight="60.0" prefWidth="150.0" text="Ответ 4" />
+                        <Label fx:id="question_1" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="55.0" prefHeight="200.0" prefWidth="915.0" text="Вопрос 1" textAlignment="CENTER">
+                           <font>
+                              <Font size="16.0" />
+                           </font></Label>
+                        <RadioButton fx:id="corans_1_1" layoutX="190.0" layoutY="355.0" mnemonicParsing="false">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="answerGroup_1" />
+                           </toggleGroup></RadioButton>
+                        <RadioButton fx:id="corans_2_1" layoutX="403.0" layoutY="355.0" mnemonicParsing="false" toggleGroup="$answerGroup_1" />
+                        <RadioButton fx:id="corans_3_1" layoutX="600.0" layoutY="355.0" mnemonicParsing="false" toggleGroup="$answerGroup_1" />
+                        <RadioButton fx:id="corans_4_1" layoutX="799.0" layoutY="355.0" mnemonicParsing="false" toggleGroup="$answerGroup_1" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab fx:id="questionTab_2" text="Вопрос 2">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="455.0" prefWidth="936.0">
+                            <children>
+                                <Label layoutX="443.0" layoutY="29.0" text="Вопрос 1" />
+                                <TextArea layoutX="14.0" layoutY="56.0" prefHeight="200.0" prefWidth="901.0" />
+                                <TextField layoutX="373.0" layoutY="295.0" promptText="Ответ 1" />
+                                <TextField layoutX="372.0" layoutY="344.0" promptText="Ответ 2" />
+                                <TextField layoutX="373.0" layoutY="388.0" promptText="Ответ 3" />
+                                <TextField layoutX="372.0" layoutY="436.0" promptText="Ответ 4" />
+                               <Label layoutX="556.0" layoutY="267.0" text="Правильный ответ" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="455.0" prefWidth="936.0">
+                            <children>
+                                <Label layoutX="411.0" layoutY="14.0" text="Вопрос 2">
+                           <font>
+                              <Font size="27.0" />
+                           </font></Label>
+                                <Label layoutX="14.0" layoutY="355.0" text="Правильный ответ:" />
+                        <Label fx:id="answer_1_2" alignment="CENTER" layoutX="116.0" layoutY="264.0" prefHeight="60.0" prefWidth="150.0" text="Ответ 1" />
+                        <Label fx:id="answer_2_2" alignment="CENTER" layoutX="336.0" layoutY="264.0" prefHeight="60.0" prefWidth="150.0" text="Ответ 2" />
+                        <Label fx:id="answer_3_2" alignment="CENTER" layoutX="533.0" layoutY="264.0" prefHeight="60.0" prefWidth="150.0" text="Ответ 3" />
+                        <Label fx:id="answer_4_2" alignment="CENTER" layoutX="732.0" layoutY="264.0" prefHeight="60.0" prefWidth="150.0" text="Ответ 4" />
+                        <Label fx:id="question_2" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="55.0" prefHeight="200.0" prefWidth="915.0" text="Вопрос 2" textAlignment="CENTER">
+                           <font>
+                              <Font size="16.0" />
+                           </font></Label>
+                        <RadioButton fx:id="corans_1_2" layoutX="190.0" layoutY="355.0" mnemonicParsing="false">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="answerGroup_2" />
+                           </toggleGroup></RadioButton>
+                        <RadioButton fx:id="corans_2_2" layoutX="403.0" layoutY="355.0" mnemonicParsing="false" toggleGroup="$answerGroup_2" />
+                        <RadioButton fx:id="corans_3_2" layoutX="600.0" layoutY="355.0" mnemonicParsing="false" toggleGroup="$answerGroup_2" />
+                        <RadioButton fx:id="corans_4_2" layoutX="799.0" layoutY="355.0" mnemonicParsing="false" toggleGroup="$answerGroup_2" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab fx:id="questionTab_3" text="Вопрос 3">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="446.0" prefWidth="936.0">
+                            <children>
+                                <Label layoutX="411.0" layoutY="14.0" text="Вопрос 3">
+                           <font>
+                              <Font size="27.0" />
+                           </font></Label>
+                                <Label layoutX="14.0" layoutY="355.0" text="Правильный ответ" />
+                        <Label fx:id="answer_1_3" alignment="CENTER" layoutX="116.0" layoutY="264.0" prefHeight="60.0" prefWidth="150.0" text="Ответ 1" />
+                        <Label fx:id="answer_2_3" alignment="CENTER" layoutX="336.0" layoutY="264.0" prefHeight="60.0" prefWidth="150.0" text="Ответ 2" />
+                        <Label fx:id="answer_3_3" alignment="CENTER" layoutX="533.0" layoutY="264.0" prefHeight="60.0" prefWidth="150.0" text="Ответ 3" />
+                        <Label fx:id="answer_4_3" alignment="CENTER" layoutX="732.0" layoutY="264.0" prefHeight="60.0" prefWidth="150.0" text="Ответ 4" />
+                        <Label fx:id="question_3" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="55.0" prefHeight="200.0" prefWidth="915.0" text="вопрос 3" textAlignment="CENTER">
+                           <font>
+                              <Font size="16.0" />
+                           </font></Label>
+                        <RadioButton fx:id="corans_1_3" layoutX="191.0" layoutY="355.0" mnemonicParsing="false">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="answerGroup_3" />
+                           </toggleGroup></RadioButton>
+                        <RadioButton fx:id="corans_4_3" layoutX="799.0" layoutY="355.0" mnemonicParsing="false" toggleGroup="$answerGroup_3" />
+                        <RadioButton fx:id="corans_3_3" layoutX="600.0" layoutY="355.0" mnemonicParsing="false" toggleGroup="$answerGroup_3" />
+                        <RadioButton fx:id="corans_2_3" layoutX="403.0" layoutY="355.0" mnemonicParsing="false" toggleGroup="$answerGroup_3" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab fx:id="questionTab_4" text="Вопрос 4">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="455.0" prefWidth="936.0">
+                            <children>
+                                <Label layoutX="411.0" layoutY="14.0" text="Вопрос 4" textAlignment="CENTER">
+                           <font>
+                              <Font size="27.0" />
+                           </font></Label>
+                                <Label layoutX="14.0" layoutY="355.0" text="Правильный ответ" />
+                        <Label fx:id="question_4" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="55.0" prefHeight="200.0" prefWidth="915.0" text="вопрос 4" textAlignment="CENTER">
+                           <font>
+                              <Font size="16.0" />
+                           </font></Label>
+                        <Label fx:id="answer_1_4" alignment="CENTER" layoutX="116.0" layoutY="264.0" prefHeight="60.0" prefWidth="150.0" text="Ответ 1" />
+                        <Label fx:id="answer_2_4" alignment="CENTER" layoutX="336.0" layoutY="264.0" prefHeight="60.0" prefWidth="150.0" text="Ответ 2" />
+                        <Label fx:id="answer_3_4" alignment="CENTER" layoutX="533.0" layoutY="264.0" prefHeight="60.0" prefWidth="150.0" text="Ответ 3" />
+                        <Label fx:id="answer_4_4" alignment="CENTER" layoutX="732.0" layoutY="264.0" prefHeight="60.0" prefWidth="150.0" text="Ответ 4" />
+                        <RadioButton fx:id="corans_1_4" layoutX="191.0" layoutY="355.0" mnemonicParsing="false">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="answerGroup_4" />
+                           </toggleGroup></RadioButton>
+                        <RadioButton fx:id="corans_2_4" layoutX="403.0" layoutY="355.0" mnemonicParsing="false" toggleGroup="$answerGroup_4" />
+                        <RadioButton fx:id="corans_3_4" layoutX="600.0" layoutY="355.0" mnemonicParsing="false" toggleGroup="$answerGroup_4" />
+                        <RadioButton fx:id="corans_4_4" layoutX="799.0" layoutY="355.0" mnemonicParsing="false" toggleGroup="$answerGroup_4" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </children>
+</AnchorPane>
